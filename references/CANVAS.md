@@ -1,7 +1,7 @@
 # The Machine Learning Canvas
 
 - **Designed for**: Armani
-- **Designed by**: E. Molinari, E. Tanzi, N. Pinto
+- **Designed by**: E. Molinari (MolEst00), E. Tanzi, N. Pinto
 - **Date**: 09/10/2024
 - **Iteration**: 1
 
