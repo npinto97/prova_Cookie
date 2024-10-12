@@ -1,7 +1,7 @@
 # The Machine Learning Canvas
 
 - **Designed for**: Armani
-- **Designed by**: E. Molinari (MolEst00), E. Tanzi, N. Pinto
+- **Designed by**: E. Molinari, N. Pinto, E. Tanzi
 - **Date**: 09/10/2024
 - **Iteration**: 1
 
@@ -111,10 +111,3 @@ The performance of this machine learning system will be measured by its accuracy
 Moreover, the model will assess the importance of the return by defining a risk factor proportional to the cost of the returned product. This will enable the system to recommend less expensive products to users who frequently return high-cost items, thus aligning product recommendations with the likelihood of returns. The reduction in overall return rates and improvements in inventory management efficiency will provide tangible evidence of the model’s value.
 
 Over time, analyzing the visual patterns identified by the image model will help to determine whether there are common traits among returned products. Monitoring these patterns could lead to insights that influence product design and development, ultimately reducing the rate of returns at the source. (<span style="color:red">aggiungere metriche quantitative per il modulo visivo?</span>) 
-
-
-
-
-
-
-# Domande
