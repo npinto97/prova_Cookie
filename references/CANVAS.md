@@ -54,6 +54,15 @@ The cost of incorrect predictions will be a critical factor. For instance, if th
 
 The predictions could be integrated into existing decision-making systems, generating actionable insights through product alerts or automated workflows. For example, a warning flag could be triggered for products with a high predicted return probability or an imminent return time frame, prompting additional quality checks, adjustments in marketing approaches, or tailored customer communications to mitigate returns and manage expectations.
 
+### Making Prediction
+> When do we make real-time/
+ batch pred.? Time available for this +
+ featurization + post-processing? Compute target?
+
+The ML system will operate on an event-driven basis, generating predictions whenever new customer orders are placed and relevant data is uploaded to the company's database. This approach allows for timely analysis of individual products within each order, predicting both the likelihood of return and the estimated return window based on the most recent information. Given the nature of the ordering process and the expected return time frames, real-time inference is not required. Instead, predictions will be made shortly after the data becomes available, ensuring that the latest order details are considered for inventory management and marketing adjustments.
+
+Since product images also need to be processed to detect patterns related to return risk, the computational workload may be substantial. To accommodate these demands, the system will require robust cloud or server resources capable of handling the combined tasks of predictive modeling and image analysis, with computations typically performed in a batch-like manner soon after new orders are recorded.
+
 ## Learn
 
 ### Data Sources
@@ -86,8 +95,6 @@ extracted from raw data sources
 
 The input features for these models will come from a combination of structured and unstructured data. For the return prediction model, features will include information from the orders, such as product characteristics, customer demographics, price points, and past return behaviors. For the image analysis model, features will be extracted from the product images themselves, looking for visual attributes that may be associated with high return rates. Additional inputs could come from customer feedback, such as reviews or the reasons given for returning the product.
 
-EVENTUALI COMMENTI SULLA FEATURES SELECTION
-
 ### Building Models
 
 > How many prod models are
@@ -110,4 +117,4 @@ The performance of this machine learning system will be measured by its accuracy
 
 Moreover, the model will assess the importance of the return by defining a risk factor proportional to the cost of the returned product. This will enable the system to recommend less expensive products to users who frequently return high-cost items, thus aligning product recommendations with the likelihood of returns. The reduction in overall return rates and improvements in inventory management efficiency will provide tangible evidence of the model’s value.
 
-Over time, analyzing the visual patterns identified by the image model will help to determine whether there are common traits among returned products. Monitoring these patterns could lead to insights that influence product design and development, ultimately reducing the rate of returns at the source. (<span style="color:red">aggiungere metriche quantitative per il modulo visivo?</span>) 
+Over time, analyzing the visual patterns identified by the image model will help to determine whether there are common traits among returned products. Monitoring these patterns could lead to insights that influence product design and development, ultimately reducing the rate of returns at the source. 
