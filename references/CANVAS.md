@@ -54,6 +54,15 @@ The cost of incorrect predictions will be a critical factor. For instance, if th
 
 The predictions could be integrated into existing decision-making systems, generating actionable insights through product alerts or automated workflows. For example, a warning flag could be triggered for products with a high predicted return probability or an imminent return time frame, prompting additional quality checks, adjustments in marketing approaches, or tailored customer communications to mitigate returns and manage expectations.
 
+### Making Prediction
+> When do we make real-time/
+ batch pred.? Time available for this +
+ featurization + post-processing? Compute target?
+
+The ML system will operate on an event-driven basis, generating predictions whenever new customer orders are placed and relevant data is uploaded to the company's database. This approach allows for timely analysis of individual products within each order, predicting both the likelihood of return and the estimated return window based on the most recent information. Given the nature of the ordering process and the expected return time frames, real-time inference is not required. Instead, predictions will be made shortly after the data becomes available, ensuring that the latest order details are considered for inventory management and marketing adjustments.
+
+Since product images also need to be processed to detect patterns related to return risk, the computational workload may be substantial. To accommodate these demands, the system will require robust cloud or server resources capable of handling the combined tasks of predictive modeling and image analysis, with computations typically performed in a batch-like manner soon after new orders are recorded.
+
 ## Learn
 
 ### Data Sources
